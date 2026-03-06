@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:template/usetemplate.dart';
 
 class StatusTemplate extends StatelessWidget {
   final String imagePath;
@@ -6,10 +7,12 @@ class StatusTemplate extends StatelessWidget {
   final String description;
   final String buttonText;
   final VoidCallback onButtonPressed;
+  final Color buttonColor;
+
 
   final double imageOffsetY;
-  final double sheetHeight;
-  final Color buttonColor;
+  final double sheetHeight; 
+
 
   const StatusTemplate({
     super.key,
@@ -20,7 +23,7 @@ class StatusTemplate extends StatelessWidget {
     required this.onButtonPressed,
     this.imageOffsetY = -150,
     this.sheetHeight = 344,
-    this.buttonColor =Colors.purple,
+    required this.buttonColor ,
   });
 
   @override
@@ -51,6 +54,10 @@ class StatusTemplate extends StatelessWidget {
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(24),
               ),
+              child: Button(
+
+                
+              )
             ),
           ),
 

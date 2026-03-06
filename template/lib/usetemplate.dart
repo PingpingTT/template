@@ -20,3 +20,19 @@ class Usetemplate extends StatelessWidget {
     );
   }
 }
+
+class Button extends StatefulWidget {
+  String? text;
+
+   Button({super.key ,this.text});
+
+  @override
+  State<Button> createState() => _MyWidgetState();
+}
+
+class _MyWidgetState extends State<Button> {
+  @override
+  Widget build(BuildContext context) {
+    return const Placeholder();
+  }
+}
